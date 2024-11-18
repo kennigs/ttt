@@ -18,10 +18,9 @@ export const Board = (isWinner, isNextX,setIsNextX)=> {
         setButton(newButton)
     }
     console.log(button)
-    const but = [... button]
     return (
         <>
-        {but.map((button, i)=> {
+        {button.map((button, i)=> {
             <span key={i}>
                 <BoardLayout value = {button} setButtonValue={()=> {setButtonValue(i)}} />
             </span>
