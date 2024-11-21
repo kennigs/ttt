@@ -1,0 +1,10 @@
+.button {
+  height: 60px;
+  width: 60px;
+  display: flexbox;
+  margin: 5px;
+  border-color: aquamarine;
+}
+.button:hover {
+  background-color: blueviolet;
+}
