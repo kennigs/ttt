@@ -1,6 +1,7 @@
 import { useState } from "react"
 import { Square } from "./Square"
 import { Wins } from "../Constants/Wins"
+import styles from '../Styles/Board.module.css'
 
 
 export const Board = ()=> {
@@ -38,7 +39,7 @@ export const Board = ()=> {
     return (
         <>
         <div>
-            <h1>{info}</h1>
+            {(isWinner) ? <h1 className={styles.firework}>{info}</h1> : <h1>{info}</h1>}
             {squares.map((squares,i)=> {
                 return(
                 <span key={i}>

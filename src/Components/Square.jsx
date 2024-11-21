@@ -1,4 +1,5 @@
 import styles from '../Styles/Square.module.css'
+import PropTypes from 'prop-types'
 
 export const Square = ({value, setSquareValue})=> {
     return(
@@ -12,4 +13,8 @@ export const Square = ({value, setSquareValue})=> {
             {value || '-'}
             </button>
     )
+}
+Square.propTypes = {
+    value: PropTypes.string,
+    setSquareValue: PropTypes.func
 }
